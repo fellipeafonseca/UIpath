@@ -31,7 +31,9 @@ Componentes utilizados:
 - Data Scraping (Leitura de Dados de Página Web)
 
 ## Vídeo de Apresentação 
-https://github.com/user-attachments/assets/c5b69649-7c40-44de-83f5-9553d882246e
+https://github.com/user-attachments/assets/68e77a50-6352-4bf0-888a-176232f1dd0d
+
+
 ![WorkItems](https://github.com/user-attachments/assets/ede4477f-33e4-4a89-bfdb-a4324dca489e)
 
 
