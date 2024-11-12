@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="899,3765" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="679,3293" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -39,47 +39,51 @@
       <x:String>UiPath.CSV.Activities</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>System.Activities</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>mscorlib</AssemblyReference>
-      <AssemblyReference>System.Data</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>PresentationCore</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-      <AssemblyReference>CredentialManagement</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
-      <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -87,17 +91,21 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Sequêncial Principal para fazer Login na plataforma &quot;https://acme-test.uipath.com/login&quot; e extrair dados da tabela Work Items para gerar arquivo CSV." DisplayName="Sequência Principal" sap:VirtualizedContainerService.HintSize="745,3600" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Sequêncial Principal para fazer Login na plataforma &quot;https://acme-test.uipath.com/login&quot; e extrair dados da tabela Work Items para gerar arquivo CSV." DisplayName="Sequência Principal" sap:VirtualizedContainerService.HintSize="676,3063" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="acmeUsuario" />
-      <Variable x:TypeArguments="ss:SecureString" Name="acmeSenha" />
-      <Variable x:TypeArguments="sd:DataTable" Name="tabelaWorkItems">
+      <Variable x:TypeArguments="x:String" Name="varStr_acmeUser">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Email_1@gmail.com</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="varStr_acmeSenha" />
+      <Variable x:TypeArguments="sd:DataTable" Name="varDt_tabelaWorkItems">
         <Variable.Default>
           <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">new System.Data.DataTable();</mca:CSharpValue>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="ui:Browser" Name="navegador" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="qtdeTipo">
+      <Variable x:TypeArguments="ui:Browser" Name="varBrowser_navegador" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="varDict_qtdePorTipo">
         <Variable.Default>
           <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">new Dictionary&lt;String, int&gt;()</mca:CSharpValue>
         </Variable.Default>
@@ -109,43 +117,81 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetSecureCredential sap2010:Annotation.AnnotationText="Obtendo Credênciais seguras do usuário. Painel de Controle-&gt;Contas de Usuário-&gt;Gerenciador de Credenciais-&gt;Adicionar uma credencial genérica&#xD;&#xA;" CredentialType="Generic" DisplayName="Credênciais do Usuário" sap:VirtualizedContainerService.HintSize="703,139" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" PersistanceType="Enterprise" Target="ACMESystems">
-      <ui:GetSecureCredential.Password>
-        <OutArgument x:TypeArguments="ss:SecureString">
-          <mca:CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">acmeSenha</mca:CSharpReference>
-        </OutArgument>
-      </ui:GetSecureCredential.Password>
-      <ui:GetSecureCredential.Username>
-        <OutArgument x:TypeArguments="x:String">
-          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">acmeUsuario</mca:CSharpReference>
-        </OutArgument>
-      </ui:GetSecureCredential.Username>
+    <Sequence DisplayName="Leitura de variaveis iniciais" sap:VirtualizedContainerService.HintSize="628,266" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </ui:GetSecureCredential>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="Abrindo URL &quot;https://acme-test.uipath.com/login&quot;" BrowserType="Chrome" DisplayName="Navegador - &quot;https://acme-test.uipath.com/login&quot;" sap:VirtualizedContainerService.HintSize="703,1992" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://acme-test.uipath.com/login">
-      <ui:OpenBrowser.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Sequência Navegador" sap:VirtualizedContainerService.HintSize="560,1860" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <ui:GetPassword sap2010:Annotation.AnnotationText="Senha para site login no site https://acme-test.uipath.com/&#xD;&#xA;&#xD;&#xA;E-mail: Email_1@gmail.com" DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="402,112" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoSQolUckxUaDUSHe7w+TDgAAAAACAAAAAAAQZgAAAAEAACAAAAAlPYTMondEgwrYdHe5NOMQv+htyXHpRdT5Gb6PtrsZ+gAAAAAOgAAAAAIAACAAAACQwO5X72hfqbJMR8MzRVaAjKTZ0Gx6UJZhLdAml9kp3BAAAAAWkGKD53CSHVE81j4jC95bQAAAANolpxfw3Jhb2yi2+4TRKDUj134SC4JQJo9dItbdmxyq/UKzMkQ6CHYflIsNPmO8SeLIc0N3EBoGrzbPVP19MLM=">
+        <ui:GetPassword.Result>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">varStr_acmeSenha</mca:CSharpReference>
+          </OutArgument>
+        </ui:GetPassword.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:GetPassword>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="402,25" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap2010:Annotation.AnnotationText="Ações a serem feitas dentro da página." DisplayName="Faça" sap:VirtualizedContainerService.HintSize="518,1768" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <ui:GetSecureCredential sap2010:Annotation.AnnotationText="Obtendo Credênciais seguras do usuário. Painel de Controle-&gt;Contas de Usuário-&gt;Gerenciador de Credenciais-&gt;Adicionar uma credencial genérica&#xA;" CredentialType="Generic" DisplayName="Credênciais do Usuário" sap:VirtualizedContainerService.HintSize="368,142" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" PersistanceType="Enterprise" Target="ACMESystems">
+              <ui:GetSecureCredential.Password>
+                <OutArgument x:TypeArguments="ss:SecureString">
+                  <mca:CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">varStr_acmeSenha</mca:CSharpReference>
+                </OutArgument>
+              </ui:GetSecureCredential.Password>
+              <ui:GetSecureCredential.Username>
+                <OutArgument x:TypeArguments="x:String">
+                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">varStr_acmeUser</mca:CSharpReference>
+                </OutArgument>
+              </ui:GetSecureCredential.Username>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetSecureCredential>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="Abrindo URL &quot;https://acme-test.uipath.com/login&quot;" BrowserType="Chrome" DisplayName="Navegador - &quot;https://acme-test.uipath.com/login&quot;" sap:VirtualizedContainerService.HintSize="628,1964" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://acme-test.uipath.com/login">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Sequência Navegador" sap:VirtualizedContainerService.HintSize="594,1831" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Ações a serem feitas dentro da página." DisplayName="Faça" sap:VirtualizedContainerService.HintSize="546,1737" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Peenchendo o campo de &quot;Email&quot;" DisplayName="Input Email" sap:VirtualizedContainerService.HintSize="476,165" sap2010:WorkflowViewState.IdRef="TypeInto_1">
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Peenchendo o campo de &quot;Email&quot;" DisplayName="Input Email" sap:VirtualizedContainerService.HintSize="498,166" sap2010:WorkflowViewState.IdRef="TypeInto_1">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="33bac632-04d4-4ade-8350-12c5866645e6" InformativeScreenshot="251228aa6d7d021f6c196244fd6af6ea" Selector="&lt;webctrl tag='INPUT' type='email' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -158,7 +204,7 @@
                 </ui:TypeInto.Target>
                 <ui:TypeInto.Text>
                   <InArgument x:TypeArguments="x:String">
-                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">acmeUsuario</mca:CSharpValue>
+                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">varStr_acmeUser</mca:CSharpValue>
                   </InArgument>
                 </ui:TypeInto.Text>
                 <sap:WorkflowViewStateService.ViewState>
@@ -167,10 +213,10 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:TypeInto>
-              <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Peenchendo o campo &quot;Password&quot;" DisplayName="Input Password" sap:VirtualizedContainerService.HintSize="476,137" sap2010:WorkflowViewState.IdRef="TypeSecureText_1">
+              <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Peenchendo o campo &quot;Password&quot;" DisplayName="Input Password" sap:VirtualizedContainerService.HintSize="498,138" sap2010:WorkflowViewState.IdRef="TypeSecureText_1">
                 <ui:TypeSecureText.SecureText>
                   <InArgument x:TypeArguments="ss:SecureString">
-                    <mca:CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">acmeSenha</mca:CSharpValue>
+                    <mca:CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">new Credential("", varStr_acmeSenha).SecurePassword</mca:CSharpValue>
                   </InArgument>
                 </ui:TypeSecureText.SecureText>
                 <ui:TypeSecureText.Target>
@@ -189,7 +235,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:TypeSecureText>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Clicando no botão Login" ClickType="CLICK_SINGLE" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="476,137" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Clicando no botão Login" ClickType="CLICK_SINGLE" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="498,138" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -216,7 +262,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Clicando no Icone Work Items para ir para a pagina da tabela" ClickType="CLICK_SINGLE" DisplayName="Click 'Work Items'" sap:VirtualizedContainerService.HintSize="476,148" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Clicando no Icone Work Items para ir para a pagina da tabela" ClickType="CLICK_SINGLE" DisplayName="Click 'Work Items'" sap:VirtualizedContainerService.HintSize="498,149" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -243,7 +289,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <Sequence sap2010:Annotation.AnnotationText="Extraindo dados de todas as abas da tabela Work Items" DisplayName="Extração de Dados - Tabela Work Items" sap:VirtualizedContainerService.HintSize="476,498" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence sap2010:Annotation.AnnotationText="Extraindo dados de todas as abas da tabela Work Items" DisplayName="Extração de Dados - Tabela Work Items" sap:VirtualizedContainerService.HintSize="498,507" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="valoresTipo" />
                 </Sequence.Variables>
@@ -253,22 +299,22 @@
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Dentro da Página 'ACMESyste Page'" sap:VirtualizedContainerService.HintSize="434,375" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="cd77725ed42d47e201630183cdb2e15c" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Dentro da Página 'ACMESyste Page'" sap:VirtualizedContainerService.HintSize="450,379" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="cd77725ed42d47e201630183cdb2e15c" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Faça" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Faça" sap:VirtualizedContainerService.HintSize="416,232" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:ExtractData DelayBetweenPagesMS="{x:Null}" sap2010:Annotation.AnnotationText="" ContinueOnError="True" DisplayName="Extração de Dados de cada Aba" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="150" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
+                        <ui:ExtractData DelayBetweenPagesMS="{x:Null}" sap2010:Annotation.AnnotationText="" ContinueOnError="True" DisplayName="Extração de Dados de cada Aba" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="368,138" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="150" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
                           <ui:ExtractData.DataTable>
                             <InOutArgument x:TypeArguments="sd:DataTable">
-                              <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">tabelaWorkItems</mca:CSharpReference>
+                              <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">varDt_tabelaWorkItems</mca:CSharpReference>
                             </InOutArgument>
                           </ui:ExtractData.DataTable>
                           <ui:ExtractData.Target>
@@ -289,7 +335,7 @@
                   </ui:BrowserScope.Body>
                 </ui:BrowserScope>
               </Sequence>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Fazendo Logout da plataforma" ClickType="CLICK_SINGLE" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="476,137" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Fazendo Logout da plataforma" ClickType="CLICK_SINGLE" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="498,138" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -316,17 +362,17 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <Delay sap2010:Annotation.AnnotationText="Tempo de Espera de 3 segundos para realizar o Log Out" DisplayName="Espera" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="476,79" sap2010:WorkflowViewState.IdRef="Delay_1">
+              <Delay sap2010:Annotation.AnnotationText="Tempo de Espera de 3 segundos para realizar o Log Out" DisplayName="Espera" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="498,82" sap2010:WorkflowViewState.IdRef="Delay_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <ui:CloseTab sap2010:Annotation.AnnotationText="Fechando a página do Navegador" DisplayName="Fechando Aba do Navegador" sap:VirtualizedContainerService.HintSize="476,64" sap2010:WorkflowViewState.IdRef="CloseTab_1">
+              <ui:CloseTab sap2010:Annotation.AnnotationText="Fechando a página do Navegador" DisplayName="Fechando Aba do Navegador" sap:VirtualizedContainerService.HintSize="498,67" sap2010:WorkflowViewState.IdRef="CloseTab_1">
                 <ui:CloseTab.Browser>
                   <InArgument x:TypeArguments="ui:Browser">
-                    <mca:CSharpValue x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">navegador</mca:CSharpValue>
+                    <mca:CSharpValue x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">varBrowser_navegador</mca:CSharpValue>
                   </InArgument>
                 </ui:CloseTab.Browser>
                 <sap:WorkflowViewStateService.ViewState>
@@ -341,16 +387,18 @@
       </ui:OpenBrowser.Body>
       <ui:OpenBrowser.UiBrowser>
         <OutArgument x:TypeArguments="ui:Browser">
-          <mca:CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">navegador</mca:CSharpReference>
+          <mca:CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">varBrowser_navegador</mca:CSharpReference>
         </OutArgument>
       </ui:OpenBrowser.UiBrowser>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="Mensagem de informação sobre o processo a ser executado" DisplayName="Mensagem de Log" sap:VirtualizedContainerService.HintSize="703,133" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Mensagem de informação sobre o processo a ser executado" DisplayName="Mensagem de Log" sap:VirtualizedContainerService.HintSize="628,134" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"Aguarde... Manipulando dados da tabela e escrevendo arquivo CSV"</mca:CSharpValue>
@@ -362,29 +410,30 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence sap2010:Annotation.AnnotationText="Realizando contagem de dados da tabelaWorkItems de acordo com a colona &quot;Type&quot;. Dados são contados dentro de um Loop For Each e inseridos em uma variável Dictionary" DisplayName="Sequência - Contagem de Dados da tabela &quot;tabelaWorkItems&quot;" sap:VirtualizedContainerService.HintSize="703,686" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence sap2010:Annotation.AnnotationText="Realizando contagem de dados da tabelaWorkItems de acordo com a colona &quot;Type&quot;. Dados são contados dentro de um Loop For Each e inseridos em uma variável Dictionary" DisplayName="Sequência - Contagem de Dados da tabela &quot;tabelaWorkItems&quot;" sap:VirtualizedContainerService.HintSize="628,82" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop na tabela" DisplayName="Para cada Linha na tabela - For Each Row" sap:VirtualizedContainerService.HintSize="661,552" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop na tabela" DisplayName="Para cada Linha na tabela - For Each Row" sap:VirtualizedContainerService.HintSize="1011,579" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="611,373" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="961,398" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If sap2010:Annotation.AnnotationText="Verificando se o dado da Linha da Coluna &quot;Type&quot; já existe no Dictionary" DisplayName="Se - If" sap:VirtualizedContainerService.HintSize="569,281" sap2010:WorkflowViewState.IdRef="If_1">
+              <If sap2010:Annotation.AnnotationText="Verificando se o dado da Linha da Coluna &quot;Type&quot; já existe no Dictionary" DisplayName="Se - If" sap:VirtualizedContainerService.HintSize="913,304" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Condition>
                   <InArgument x:TypeArguments="x:Boolean">
-                    <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">qtdeTipo.ContainsKey(row["Type"].ToString())</mca:CSharpValue>
+                    <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">varDict_qtdePorTipo.ContainsKey(row["Type"].ToString())</mca:CSharpValue>
                   </InArgument>
                 </If.Condition>
                 <sap:WorkflowViewStateService.ViewState>
@@ -393,15 +442,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Assign sap2010:Annotation.AnnotationText="Se o dado já existe, é incrementado a quantidade dele para +1" sap:VirtualizedContainerService.HintSize="262,102" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign sap2010:Annotation.AnnotationText="Se o dado já existe, é incrementado a quantidade dele para +1" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_4">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">
-                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">qtdeTipo[row["Type"].ToString()]</mca:CSharpReference>
+                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">varDict_qtdePorTipo[row["Type"].ToString()]</mca:CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:Int32">
-                        <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">qtdeTipo[row[3].ToString()] + 1</mca:CSharpValue>
+                        <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">varDict_qtdePorTipo[row[3].ToString()] + 1</mca:CSharpValue>
                       </InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
@@ -412,10 +461,10 @@
                   </Assign>
                 </If.Then>
                 <If.Else>
-                  <Assign sap2010:Annotation.AnnotationText="Caso o dado ainda não exista, ele é inicializado e o valor 1 é atribuído" sap:VirtualizedContainerService.HintSize="262,102" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign sap2010:Annotation.AnnotationText="Caso o dado ainda não exista, ele é inicializado e o valor 1 é atribuído" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_5">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">
-                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">qtdeTipo[row["Type"].ToString()]</mca:CSharpReference>
+                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">varDict_qtdePorTipo[row["Type"].ToString()]</mca:CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
@@ -434,7 +483,7 @@
         </ui:ForEachRow.Body>
         <ui:ForEachRow.DataTable>
           <InArgument x:TypeArguments="sd:DataTable">
-            <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">tabelaWorkItems</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">varDt_tabelaWorkItems</mca:CSharpValue>
           </InArgument>
         </ui:ForEachRow.DataTable>
         <sap:WorkflowViewStateService.ViewState>
@@ -444,10 +493,10 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
     </Sequence>
-    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Escrevendo os dado da tabela em um arquivo CSV. Caminho C:\Temp\" Delimitator="Comma" DisplayName="Gerando arquivo CSV" FilePath="C:\Temp\WorkItems.csv" sap:VirtualizedContainerService.HintSize="703,194" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2">
+    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Escrevendo os dado da tabela em um arquivo CSV. Caminho C:\Temp\" Delimitator="Comma" DisplayName="Gerando arquivo CSV" FilePath="C:\Temp\WorkItems.csv" sap:VirtualizedContainerService.HintSize="628,195" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2">
       <ui:WriteCsvFile.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
-          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">tabelaWorkItems</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">varDt_tabelaWorkItems</mca:CSharpValue>
         </InArgument>
       </ui:WriteCsvFile.DataTable>
       <sap:WorkflowViewStateService.ViewState>
@@ -456,10 +505,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:WriteCsvFile>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="Mensagem Final para Finalização do Programa" DisplayName="Mensagem Final" sap:VirtualizedContainerService.HintSize="703,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Mensagem Final para Finalização do Programa" DisplayName="Mensagem Final" sap:VirtualizedContainerService.HintSize="628,123" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
-          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Processo Finalizado. Total de Linhas Extraídas da Tabela: " + tabelaWorkItems.Rows.Count+". Totais por Type" + String.Join(",",qtdeTipo)</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Processo Finalizado. Total de Linhas Extraídas da Tabela: " + varDt_tabelaWorkItems.Rows.Count+". Totais por Type" + String.Join(",",varDict_qtdePorTipo)</mca:CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
       <sap:WorkflowViewStateService.ViewState>
